@@ -96,7 +96,7 @@ int main()
 		}
 		else if (choice == 2)
 		{
-			c.Hungry(p, p.Eat_cat);
+			c.Hungry();
 			c.speak();
 			c.Print();
 		}
