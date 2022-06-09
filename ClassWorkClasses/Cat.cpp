@@ -183,3 +183,28 @@ void Cat::SetWeight(int w)
 		cout << "Incporrect weight!" << endl;
 	}
 }
+
+int Cat::GetEnergy() const
+{
+	return energy;
+}
+
+string Cat::GetName() const
+{
+	return name;
+}
+
+string Cat::GetColor() const
+{
+	return color;
+}
+
+int Cat::GetAge() const
+{
+	return age;
+}
+
+int Cat::GetWeight() const
+{
+	return weight;
+}
