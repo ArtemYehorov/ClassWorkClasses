@@ -16,54 +16,12 @@ private:
 
 public:
 	//Constructors
-	Cat()
-	{
-		SetEnergy(70);
-		SetName("Barsik");
-		SetColor("Black");
-		SetAge(7);
-		SetWeight(5);
-	}
-	Cat(int e)
-	{
-		SetEnergy(e);
-		SetName("Barsik");
-		SetColor("Black");
-		SetAge(7);
-		SetWeight(5);
-	}
-	Cat(int e, string n)
-	{
-		SetEnergy(e);
-		SetName(n);
-		SetColor("Black");
-		SetAge(7);
-		SetWeight(5);
-	}
-	Cat(int e, string n, string c)
-	{
-		SetEnergy(e);
-		SetName(n);
-		SetColor(c);
-		SetAge(7);
-		SetWeight(5);
-	}
-	Cat(int e, string n , string c , unsigned int a)
-	{
-		SetEnergy(e);
-		SetName(n);
-		SetColor(c);
-		SetAge(a);
-		SetWeight(5);
-	}
-	Cat(int e, string n, string c, unsigned int a, double w)
-	{
-		SetEnergy(e);
-		SetName(n);
-		SetColor(c);
-		SetAge(a);
-		SetWeight(w);
-	}
+	Cat();
+	Cat(int e);
+	Cat(int e, string n);
+	Cat(int e, string n, string c);
+	Cat(int e, string n, string c, unsigned int a);
+	Cat(int e, string n, string c, unsigned int a, double w);
 
 	//Actions
 	void Play();

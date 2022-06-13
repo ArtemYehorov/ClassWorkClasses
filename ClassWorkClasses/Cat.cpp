@@ -1,5 +1,59 @@
 #include "Cat.h"
 
+Cat::Cat()
+{
+	SetEnergy(70);
+	SetName("Barsik");
+	SetColor("Black");
+	SetAge(7);
+	SetWeight(5);
+}
+
+Cat::Cat(int e)
+{
+	SetEnergy(e);
+	SetName("Barsik");
+	SetColor("Black");
+	SetAge(7);
+	SetWeight(5);
+}
+
+Cat::Cat(int e, string n)
+{
+	SetEnergy(e);
+	SetName(n);
+	SetColor("Black");
+	SetAge(7);
+	SetWeight(5);
+}
+
+Cat::Cat(int e, string n, string c)
+{
+	SetEnergy(e);
+	SetName(n);
+	SetColor(c);
+	SetAge(7);
+	SetWeight(5);
+}
+
+Cat::Cat(int e, string n, string c, unsigned int a)
+{
+	SetEnergy(e);
+	SetName(n);
+	SetColor(c);
+	SetAge(a);
+	SetWeight(5);
+}
+
+Cat::Cat(int e, string n, string c, unsigned int a, double w)
+{
+	SetEnergy(e);
+	SetName(n);
+	SetColor(c);
+	SetAge(a);
+	SetWeight(w);
+}
+
 void Cat::Play()
 {
 	if (weight < 15)
