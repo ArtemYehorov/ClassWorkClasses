@@ -1,6 +1,7 @@
 #include<iostream>
 #include<string>
 #include<Windows.h>
+#pragma once
 using namespace std;
 
 class Cat
@@ -17,11 +18,11 @@ private:
 public:
 	//Constructors
 	Cat();
-	Cat(int e);
-	Cat(int e, string n);
-	Cat(int e, string n, string c);
-	Cat(int e, string n, string c, unsigned int a);
-	Cat(int e, string n, string c, unsigned int a, double w);
+	Cat(string n);
+	Cat(string n, string c);
+	Cat(string n, string c, unsigned int a);
+	Cat(string n, string c, unsigned int a, double w);
+	Cat(string n, string c, unsigned int a, double w, int e);
 
 	//Actions
 	void Play();

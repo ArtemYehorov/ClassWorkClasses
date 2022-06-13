@@ -1,57 +1,23 @@
 #include "Cat.h"
 
-Cat::Cat()
-{
-	SetEnergy(70);
-	SetName("Barsik");
-	SetColor("Black");
-	SetAge(7);
-	SetWeight(5);
-}
+Cat::Cat() : Cat("Barsik", "Black", 7, 5, 100) {}
 
-Cat::Cat(int e)
-{
-	SetEnergy(e);
-	SetName("Barsik");
-	SetColor("Black");
-	SetAge(7);
-	SetWeight(5);
-}
+Cat::Cat(string n) : Cat("Barsik", "Black", 7, 5, 100) {}
 
-Cat::Cat(int e, string n)
-{
-	SetEnergy(e);
-	SetName(n);
-	SetColor("Black");
-	SetAge(7);
-	SetWeight(5);
-}
+Cat::Cat(string n, string c) : Cat(n, c, 7, 5, 100) {}
 
-Cat::Cat(int e, string n, string c)
-{
-	SetEnergy(e);
-	SetName(n);
-	SetColor(c);
-	SetAge(7);
-	SetWeight(5);
-}
+Cat::Cat(string n, string c, unsigned int a) : Cat(n, c, a, 7, 100) {}
 
-Cat::Cat(int e, string n, string c, unsigned int a)
-{
-	SetEnergy(e);
-	SetName(n);
-	SetColor(c);
-	SetAge(a);
-	SetWeight(5);
-}
+Cat::Cat(string n, string c, unsigned int a, double w) : Cat(n, c, a, w, 100) {}
 
-Cat::Cat(int e, string n, string c, unsigned int a, double w)
+//1
+Cat::Cat(string n, string c, unsigned int a, double w, int e)
 {
-	SetEnergy(e);
 	SetName(n);
 	SetColor(c);
 	SetAge(a);
 	SetWeight(w);
+	SetEnergy(e);
 }
 
 void Cat::Play()
@@ -104,11 +70,11 @@ void Cat::Print() const
 {
 	if (energy > 0)
 	{
-		cout << "Name - " << name << endl;
-		cout << "Color - " << color << endl;
-		cout << "Age - " << age << endl;
-		cout << "Weight - " << weight << endl;
-		cout << "Energy - " << energy << endl;
+		cout << "Name - " << GetName() << endl;
+		cout << "Color - " << GetColor() << endl;
+		cout << "Age - " << GetAge() << endl;
+		cout << "Weight - " << GetWeight() << endl;
+		cout << "Energy - " << GetEnergy() << endl;
 		if (hungry) cout << "Hungry cat" << endl;
 		else cout << "The cat is full" << endl;
 
